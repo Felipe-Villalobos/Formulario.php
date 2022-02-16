@@ -37,7 +37,7 @@ if ($reg = mysqli_fetch_array($registros)) {
                   <label for="inputfirstname" class="col-md-4 col-form-label">Identificación</label>
                   <div class="col-md-6">
                     
-                    <input type="text" name="newidentificacion" class="form-control"value="<?php echo $reg['identificacion'] ?>">
+                    <input type="number" name="newidentificacion" class="form-control"value="<?php echo $reg['identificacion'] ?>">
                   </div>
                  </div>
                     <div class="form-group row">
@@ -67,7 +67,7 @@ if ($reg = mysqli_fetch_array($registros)) {
                   <div class="form-group row">
                     <label for="inputfirstname" class="col-md-4 col-form-label">Correo</label>
                     <div class="col-md-6">
-                      <input type="text" name="newcorreo" class="form-control" value="<?php echo $reg['correo']?>">
+                      <input type="email" name="newcorreo" class="form-control" value="<?php echo $reg['correo']?>">
                     </div>
                    </div>
 
@@ -75,21 +75,21 @@ if ($reg = mysqli_fetch_array($registros)) {
                     <div class="form-group row">
                       <label for="birthday" class="col-md-4 col-form-label">Fecha de nacimiento</label>
                       <div class="col-md-6">
-                        <input type="text" name="newfechanacimiento" class="form-control" value="<?php echo $reg['fechanacimiento'] ?>"  >
+                        <input type="date" name="newfechanacimiento" class="form-control" id="birthday" value="<?php echo $reg['fechanacimiento'] ?>"  >
                       </div>
                      </div>
                 <div class="form-group row" >
                     <label for="inputfirstname" class="col-md-4">    
                        Movil</label>
                     <div class="col-md-6">
-                       <input type="text" name="newmovil" class="form-control" value="<?php echo $reg['movil'] ?>">
+                       <input type="number" name="newmovil" class="form-control" value="<?php echo $reg['movil'] ?>">
                     </div>
                </div>
                <div class="form-group row">
                     <label for="age" class="col-md-4">
                       Edad</label>
                     <div class="col-md-6">
-                        <input type="text" name="newedad" class="form-control" value="<?php echo $reg['edad'] ?>">
+                        <input type="number" name="newedad" class="form-control" value="<?php echo $reg['edad'] ?>">
                     </div >
                </div>
                
